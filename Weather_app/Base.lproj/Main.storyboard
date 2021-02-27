@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Votre ville" translatesAutoresizingMaskIntoConstraints="NO" id="DIF-P8-sO6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-6a-e82">
+                                <rect key="frame" x="0.0" y="140" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Puj-VR-2NE">
+                                <rect key="frame" x="107" y="160" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HOe-m1-eeY"/>
+                                    <constraint firstAttribute="width" constant="200" id="bQU-x6-Eb4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad2-x7-wwz">
+                                <rect key="frame" x="0.0" y="370" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" red="0.075769435790000006" green="0.0" blue="0.124554728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUK-mF-PEC">
+                                <rect key="frame" x="0.0" y="150" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-7n-So8">
+                                <rect key="frame" x="0.0" y="390" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DIF-P8-sO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0mY-fE-oOT"/>
+                            <constraint firstItem="zfL-6a-e82" firstAttribute="top" secondItem="DIF-P8-sO6" secondAttribute="bottom" constant="40" id="73z-sh-eIa"/>
+                            <constraint firstItem="bE2-7n-So8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMi-id-Fss"/>
+                            <constraint firstItem="bE2-7n-So8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pp5-cb-GpO"/>
+                            <constraint firstItem="ad2-x7-wwz" firstAttribute="top" secondItem="Puj-VR-2NE" secondAttribute="bottom" constant="10" id="Rxa-mp-767"/>
+                            <constraint firstItem="Puj-VR-2NE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tof-5N-csw"/>
+                            <constraint firstItem="bE2-7n-So8" firstAttribute="top" secondItem="ad2-x7-wwz" secondAttribute="bottom" constant="20" id="Twj-LX-roA"/>
+                            <constraint firstItem="nUK-mF-PEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UdZ-Nx-kp6"/>
+                            <constraint firstItem="nUK-mF-PEC" firstAttribute="top" secondItem="zfL-6a-e82" secondAttribute="bottom" constant="10" id="bnQ-b3-Fcd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zfL-6a-e82" secondAttribute="trailing" id="boy-KN-Gpi"/>
+                            <constraint firstItem="Puj-VR-2NE" firstAttribute="top" secondItem="nUK-mF-PEC" secondAttribute="bottom" constant="10" id="gvR-Xi-WfC"/>
+                            <constraint firstItem="zfL-6a-e82" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rPj-qZ-CgP"/>
+                            <constraint firstItem="ad2-x7-wwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rao-u5-lnA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nUK-mF-PEC" secondAttribute="trailing" id="scs-lt-y23"/>
+                            <constraint firstItem="DIF-P8-sO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t0p-vf-W1Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ad2-x7-wwz" secondAttribute="trailing" id="vgm-cj-VF0"/>
+                            <constraint firstItem="DIF-P8-sO6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xM2-9m-65x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="city" destination="zfL-6a-e82" id="PVU-2B-Dak"/>
+                        <outlet property="minmax" destination="bE2-7n-So8" id="bB8-b5-f5O"/>
+                        <outlet property="mondesc" destination="nUK-mF-PEC" id="fkg-My-lR5"/>
+                        <outlet property="myview" destination="8bC-Xf-vdC" id="2P7-6h-XHJ"/>
+                        <outlet property="photo" destination="Puj-VR-2NE" id="VF4-wO-L6T"/>
+                        <outlet property="recherche" destination="DIF-P8-sO6" id="no0-WX-MO8"/>
+                        <outlet property="temp" destination="ad2-x7-wwz" id="NnV-38-mpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
